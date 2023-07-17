@@ -1,0 +1,47 @@
+
+÷
+ï
+dataSources:
+  - kind: ethereum
+    mapping:
+      abis:
+        - file:
+            /: /ipfs/QmWMvEUfRw7mrMNmzva6td8GyBUrFFSm817eK8vb3pLWXT
+          name: Prediction
+      apiVersion: 0.0.5
+      entities:
+        - AdminAccessSet
+        - BetPlaced
+        - MatchAdded
+        - OwnershipTransferred
+        - TeamAdded
+        - TeamUpdated
+      eventHandlers:
+        - event: 'AdminAccessSet(address,bool)'
+          handler: handleAdminAccessSet
+        - event: 'BetPlaced(indexed uint256,indexed uint8,indexed uint256)'
+          handler: handleBetPlaced
+        - event: >-
+            MatchAdded(indexed uint8,indexed
+            uint256,uint8,uint8,uint256,uint256,uint256)
+          handler: handleMatchAdded
+        - event: 'OwnershipTransferred(indexed address,indexed address)'
+          handler: handleOwnershipTransferred
+        - event: 'TeamAdded(indexed uint8,string)'
+          handler: handleTeamAdded
+        - event: 'TeamUpdated(indexed uint8,string)'
+          handler: handleTeamUpdated
+      file:
+        /: /ipfs/QmcunkX4hhPeEci33a15pBheAgGjtscJqehtonzq6W34HF
+      kind: ethereum/events
+      language: wasm/assemblyscript
+    name: Prediction
+    network: testnet
+    source:
+      abi: Prediction
+      address: '0x0dc6A6e18af262DdA545924C68242aa88ED6714d'
+schema:
+  file:
+    /: /ipfs/QmedYWcKcGZ4a47NYUMhxUkyCVPJZwd7U3sZEXfyYiXAAg
+specVersion: 0.0.2
+ï

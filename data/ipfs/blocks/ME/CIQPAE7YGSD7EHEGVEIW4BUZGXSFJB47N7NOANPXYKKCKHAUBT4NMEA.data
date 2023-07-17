@@ -1,0 +1,16 @@
+
+ÜÔtype Match @entity {
+  id: ID!
+  season: BigInt!
+  teamAId: BigInt!
+  teamBId: BigInt!
+  startingTime: BigInt!
+  poolsStartTime: BigInt!
+  poolsEndTime: BigInt!
+}
+
+type Team @entity {
+  id: ID!
+  name: String!
+}
+Ô
