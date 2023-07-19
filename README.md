@@ -15,7 +15,7 @@ This repository contains the Solidity Smart Contracts for Betsz.
 -   Clone the repository
 
 ```sh
-git clone https://github.com/nonceblox/betz-contracts
+git clone https://github.com/shi-vaa/Betting-Pools-Chainlink
 ```
 
 -   Navigate to `betz-contracts` directory
