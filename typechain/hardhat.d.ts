@@ -37,29 +37,29 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.PoolBet__factory>;
     getContractFactory(
-      name: "BundlesBridge",
+      name: "BetszBridge",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.BundlesBridge__factory>;
+    ): Promise<Contracts.BetszBridge__factory>;
     getContractFactory(
-      name: "IBundlesToken",
+      name: "IBetszToken",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IBundlesToken__factory>;
+    ): Promise<Contracts.IBetszToken__factory>;
     getContractFactory(
-      name: "BundlesLock",
+      name: "BetszLock",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.BundlesLock__factory>;
+    ): Promise<Contracts.BetszLock__factory>;
     getContractFactory(
-      name: "BundlesToken",
+      name: "BetszToken",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.BundlesToken__factory>;
+    ): Promise<Contracts.BetszToken__factory>;
     getContractFactory(
       name: "Prediction",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Prediction__factory>;
     getContractFactory(
-      name: "BundlesTestToken",
+      name: "BetszTestToken",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.BundlesTestToken__factory>;
+    ): Promise<Contracts.BetszTestToken__factory>;
     getContractFactory(
       name: "AccessProtected",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -104,35 +104,35 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.PoolBet>;
     getContractAt(
-      name: "BundlesBridge",
+      name: "BetszBridge",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.BundlesBridge>;
+    ): Promise<Contracts.BetszBridge>;
     getContractAt(
-      name: "IBundlesToken",
+      name: "IBetszToken",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.IBundlesToken>;
+    ): Promise<Contracts.IBetszToken>;
     getContractAt(
-      name: "BundlesLock",
+      name: "BetszLock",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.BundlesLock>;
+    ): Promise<Contracts.BetszLock>;
     getContractAt(
-      name: "BundlesToken",
+      name: "BetszToken",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.BundlesToken>;
+    ): Promise<Contracts.BetszToken>;
     getContractAt(
       name: "Prediction",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Prediction>;
     getContractAt(
-      name: "BundlesTestToken",
+      name: "BetszTestToken",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.BundlesTestToken>;
+    ): Promise<Contracts.BetszTestToken>;
     getContractAt(
       name: "AccessProtected",
       address: string,

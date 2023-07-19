@@ -19,7 +19,7 @@ import { Listener, Provider } from "@ethersproject/providers";
 import { FunctionFragment, EventFragment, Result } from "@ethersproject/abi";
 import type { TypedEventFilter, TypedEvent, TypedListener } from "./common";
 
-interface BundlesBridgeInterface extends ethers.utils.Interface {
+interface BetszBridgeInterface extends ethers.utils.Interface {
   functions: {
     "deposit(address,uint256,string)": FunctionFragment;
     "executeMetaTransaction(bytes,bytes32,bytes32,uint8)": FunctionFragment;
@@ -123,7 +123,7 @@ export type OwnershipTransferredEvent = TypedEvent<
   [string, string] & { previousOwner: string; newOwner: string }
 >;
 
-export class BundlesBridge extends BaseContract {
+export class BetszBridge extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
@@ -164,7 +164,7 @@ export class BundlesBridge extends BaseContract {
     toBlock?: string | number | undefined
   ): Promise<Array<TypedEvent<EventArgsArray & EventArgsObject>>>;
 
-  interface: BundlesBridgeInterface;
+  interface: BetszBridgeInterface;
 
   functions: {
     deposit(

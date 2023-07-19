@@ -2,8 +2,8 @@ import { expect, use } from "chai";
 import { ethers, waffle, network } from "hardhat";
 import { Signer, BigNumber } from "ethers";
 import {
-  BundlesTestToken,
-  BundlesTestToken__factory,
+  BetszTestToken,
+  BetszTestToken__factory,
   Prediction,
   Prediction__factory,
 } from "../typechain";
@@ -11,8 +11,8 @@ import exp from "constants";
 use(waffle.solidity);
 
 describe("Prediction test", () => {
-  let bundleToken: BundlesTestToken,
-    bundleTokenFactory: BundlesTestToken__factory;
+  let betszleToken: BetszTestToken,
+    betszleTokenFactory: BetszTestToken__factory;
   let prediction: Prediction, predictionFactory: Prediction__factory;
   let adminSigner: Signer, aliceSigner: Signer, bobSigner: Signer,accounts3: Signer ;
   let admin: string, alice: string, bob: string;
@@ -22,20 +22,20 @@ describe("Prediction test", () => {
     admin = await adminSigner.getAddress();
     alice = await aliceSigner.getAddress();
     bob = await bobSigner.getAddress();
-    bundleTokenFactory = await ethers.getContractFactory("BundlesTestToken");
+    betszleTokenFactory = await ethers.getContractFactory("BetszTestToken");
     predictionFactory = await ethers.getContractFactory("Prediction");
-    bundleToken = await bundleTokenFactory.deploy(
+    betszleToken = await betszleTokenFactory.deploy(
       ethers.utils.parseEther("500000")
     );
     prediction = await predictionFactory.deploy(
-      bundleToken.address,
+      betszleToken.address,
       "0x326C977E6efc84E512bB9C30f76E30c160eD06FB",
       "0x0bDDCD124709aCBf9BB3F824EbC61C87019888bb",
       Buffer.from("a79e6eaf562f4be981d601cfbf8f8d84"),
       BigNumber.from("100000000000000000")
     );
-    bundleToken.transfer(alice, 1000);
-    bundleToken.transfer(bob, 1000);
+    betszleToken.transfer(alice, 1000);
+    betszleToken.transfer(bob, 1000);
   });
   it("Owner should be able to add sport", async () => {
     var sport = {
@@ -101,8 +101,8 @@ describe("Prediction test", () => {
   //   );
   // });
   // it("User should be able to Place Bet", async () => {
-  //   await bundleToken.connect(bobSigner).approve(prediction.address, 500);
-  //   await bundleToken.connect(aliceSigner).approve(prediction.address, 500);
+  //   await betszleToken.connect(bobSigner).approve(prediction.address, 500);
+  //   await betszleToken.connect(aliceSigner).approve(prediction.address, 500);
   //   await expect(prediction.connect(aliceSigner).placeBet(1, 1, 1)).to.emit(
   //     prediction,
   //     "BetPlaced"

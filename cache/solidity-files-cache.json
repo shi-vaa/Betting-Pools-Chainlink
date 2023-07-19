@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/BetPool.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/BetPool.sol": {
       "lastModificationDate": 1641278897468,
       "contentHash": "85c0f27190cf0f5db2b4decec3d7693d",
       "sourceName": "contracts/BetPool.sol",
@@ -40,7 +40,7 @@
         "PoolBet"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/utils/Address.sol": {
       "lastModificationDate": 1640170180476,
       "contentHash": "4cff8b2ea0d958750786b4e3ca308445",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
@@ -75,7 +75,7 @@
         "Address"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
       "lastModificationDate": 1640170180476,
       "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
@@ -112,7 +112,7 @@
         "Ownable"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
       "lastModificationDate": 1640170199536,
       "contentHash": "302d9755e46bc69d7058b0cbe7185e37",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
@@ -147,7 +147,7 @@
         "IERC20"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/utils/Context.sol": {
       "lastModificationDate": 1640170180476,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
@@ -182,7 +182,7 @@
         "Context"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/Prediction.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/Prediction.sol": {
       "lastModificationDate": 1649330555381,
       "contentHash": "b3fa3638102c9c473c6e34a4dbbafde4",
       "sourceName": "contracts/Prediction.sol",
@@ -223,7 +223,7 @@
         "Prediction"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
       "lastModificationDate": 1640170215852,
       "contentHash": "76814c83c32552ed2b521c816b4d801a",
       "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
@@ -261,7 +261,7 @@
         "SafeERC20"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/utils/AccessProtected.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/utils/AccessProtected.sol": {
       "lastModificationDate": 1641278564121,
       "contentHash": "d414091d82d7db8b81d45e6700b37cdd",
       "sourceName": "contracts/utils/AccessProtected.sol",
@@ -299,7 +299,7 @@
         "AccessProtected"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/security/Pausable.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/security/Pausable.sol": {
       "lastModificationDate": 1640170180476,
       "contentHash": "9c2dccab8e3a43a18c41e358763fe4d8",
       "sourceName": "@openzeppelin/contracts/security/Pausable.sol",
@@ -336,10 +336,10 @@
         "Pausable"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/BundlesToken.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/BetszToken.sol": {
       "lastModificationDate": 1639478233470,
       "contentHash": "b8a07167d43127d69b8a76e39719a029",
-      "sourceName": "contracts/BundlesToken.sol",
+      "sourceName": "contracts/BetszToken.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -372,10 +372,10 @@
         "^0.8.4"
       ],
       "artifacts": [
-        "BundlesToken"
+        "BetszToken"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
       "lastModificationDate": 1640170199540,
       "contentHash": "f48de0eaae9544072b8766e2eac528a7",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
@@ -414,7 +414,7 @@
         "ERC20"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
       "lastModificationDate": 1640170215832,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
@@ -451,10 +451,10 @@
         "IERC20Metadata"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/BundlesLock.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/BetszLock.sol": {
       "lastModificationDate": 1639478233470,
       "contentHash": "f452e0528bd8bcf36cc05ebccb0619cd",
-      "sourceName": "contracts/BundlesLock.sol",
+      "sourceName": "contracts/BetszLock.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -488,10 +488,10 @@
         "0.8.4"
       ],
       "artifacts": [
-        "BundlesLock"
+        "BetszLock"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
       "lastModificationDate": 1640170180476,
       "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
       "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
@@ -526,7 +526,7 @@
         "ReentrancyGuard"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/utils/NativeMetaTransaction.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/utils/NativeMetaTransaction.sol": {
       "lastModificationDate": 1639478233470,
       "contentHash": "8a89e2786ae6803f4a18021a46f7ad14",
       "sourceName": "contracts/utils/NativeMetaTransaction.sol",
@@ -565,7 +565,7 @@
         "NativeMetaTransaction"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/utils/EIP712Base.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/utils/EIP712Base.sol": {
       "lastModificationDate": 1639478233470,
       "contentHash": "1b52d798f4e1915a4e4ff068f9054f62",
       "sourceName": "contracts/utils/EIP712Base.sol",
@@ -601,7 +601,7 @@
         "Initializable"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/utils/ContextMixin.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/utils/ContextMixin.sol": {
       "lastModificationDate": 1639478233470,
       "contentHash": "f251158809fc08ce42cc657ca5289821",
       "sourceName": "contracts/utils/ContextMixin.sol",
@@ -636,10 +636,10 @@
         "ContextMixin"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/BundlesBridge.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/BetszBridge.sol": {
       "lastModificationDate": 1639478233470,
       "contentHash": "0939f2cca1fa40eecc36f51e75d799ea",
-      "sourceName": "contracts/BundlesBridge.sol",
+      "sourceName": "contracts/BetszBridge.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -671,14 +671,14 @@
         "^0.8.4"
       ],
       "artifacts": [
-        "BundlesBridge",
-        "IBundlesToken"
+        "BetszBridge",
+        "IBetszToken"
       ]
     },
-    "/home/shivamogga/software-projects/bundles-contracts/contracts/test/BundlesTestToken.sol": {
+    "/home/shivamogga/software-projects/Betsz-contracts/contracts/test/BetszTestToken.sol": {
       "lastModificationDate": 1639478233470,
       "contentHash": "e2359f6cdb73e3db7fdf970d73020696",
-      "sourceName": "contracts/test/BundlesTestToken.sol",
+      "sourceName": "contracts/test/BetszTestToken.sol",
       "solcConfig": {
         "version": "0.8.4",
         "settings": {
@@ -709,7 +709,7 @@
         "^0.8.4"
       ],
       "artifacts": [
-        "BundlesTestToken"
+        "BetszTestToken"
       ]
     }
   }

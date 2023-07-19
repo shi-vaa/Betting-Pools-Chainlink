@@ -19,7 +19,7 @@ import { Listener, Provider } from "@ethersproject/providers";
 import { FunctionFragment, EventFragment, Result } from "@ethersproject/abi";
 import type { TypedEventFilter, TypedEvent, TypedListener } from "./common";
 
-interface BundlesLockInterface extends ethers.utils.Interface {
+interface BetszLockInterface extends ethers.utils.Interface {
   functions: {
     "burnTxHashes(string)": FunctionFragment;
     "executeMetaTransaction(bytes,bytes32,bytes32,uint8)": FunctionFragment;
@@ -138,7 +138,7 @@ export type ReleaseEvent = TypedEvent<
   }
 >;
 
-export class BundlesLock extends BaseContract {
+export class BetszLock extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
@@ -179,7 +179,7 @@ export class BundlesLock extends BaseContract {
     toBlock?: string | number | undefined
   ): Promise<Array<TypedEvent<EventArgsArray & EventArgsObject>>>;
 
-  interface: BundlesLockInterface;
+  interface: BetszLockInterface;
 
   functions: {
     burnTxHashes(arg0: string, overrides?: CallOverrides): Promise<[boolean]>;

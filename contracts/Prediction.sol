@@ -17,7 +17,7 @@ contract Prediction is AccessProtected, Feed, KeeperCompatible {
 
     Counters.Counter public _betIds;
 
-    IERC20 public immutable bund;
+    IERC20 public immutable betsz;
 
     uint256 public lastTimeStamp = block.timestamp;
 
@@ -134,13 +134,13 @@ contract Prediction is AccessProtected, Feed, KeeperCompatible {
     event PerformUpKeep(uint256 matchId);
 
     constructor(
-        IERC20 _bund,
+        IERC20 _betsz,
         address _linkToken,
         address _oracle,
         bytes32 _jobId,
         uint256 _fee
     ) Feed(_linkToken, _oracle, _jobId, _fee) {
-        bund = _bund;
+        betsz = _betsz;
     }
 
     function updateOracleRequestParams(
@@ -350,7 +350,7 @@ contract Prediction is AccessProtected, Feed, KeeperCompatible {
         predictionsIndexByPool[sender][prediction.poolId] =
             predictions.length -
             1;
-        bund.safeTransferFrom(
+        betsz.safeTransferFrom(
             sender,
             address(this),
             pools[prediction.poolId].fee
@@ -395,7 +395,7 @@ contract Prediction is AccessProtected, Feed, KeeperCompatible {
     //     userBets[sender][_poolId].push(_matchId);
     //     bets[_poolId].push(Bet(sender, _matchId, _team));
     //     if (userBets[sender][_poolId].length == 1) {
-    //         bund.safeTransferFrom(sender, address(this), pools[_poolId].fee);
+    //         betsz.safeTransferFrom(sender, address(this), pools[_poolId].fee);
     //     }
     //     emit BetPlaced(
     //         sender,
@@ -419,7 +419,7 @@ contract Prediction is AccessProtected, Feed, KeeperCompatible {
         for (uint256 i = 0; i < _winners.length; i++) {
             address winner = _winners[i];
             uint256 amount = _amounts[i];
-            bund.transfer(winner, amount);
+            betsz.transfer(winner, amount);
         }
         emit RewardedPools(_poolId, _winners, _amounts);
     }

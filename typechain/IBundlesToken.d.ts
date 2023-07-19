@@ -19,7 +19,7 @@ import { Listener, Provider } from "@ethersproject/providers";
 import { FunctionFragment, EventFragment, Result } from "@ethersproject/abi";
 import type { TypedEventFilter, TypedEvent, TypedListener } from "./common";
 
-interface IBundlesTokenInterface extends ethers.utils.Interface {
+interface IBetszTokenInterface extends ethers.utils.Interface {
   functions: {
     "deposit(address,bytes)": FunctionFragment;
   };
@@ -34,7 +34,7 @@ interface IBundlesTokenInterface extends ethers.utils.Interface {
   events: {};
 }
 
-export class IBundlesToken extends BaseContract {
+export class IBetszToken extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
@@ -75,7 +75,7 @@ export class IBundlesToken extends BaseContract {
     toBlock?: string | number | undefined
   ): Promise<Array<TypedEvent<EventArgsArray & EventArgsObject>>>;
 
-  interface: IBundlesTokenInterface;
+  interface: IBetszTokenInterface;
 
   functions: {
     deposit(

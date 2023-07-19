@@ -27,7 +27,7 @@ interface PredictionInterface extends ethers.utils.Interface {
     "addMatches(tuple[])": FunctionFragment;
     "addPool((uint256[],uint16[],uint256,uint256,uint256,uint256))": FunctionFragment;
     "addPoolPrediction((uint256[],uint16[],uint8,address))": FunctionFragment;
-    "bund()": FunctionFragment;
+    "betsz()": FunctionFragment;
     "getChoicesOfPrediction(uint256)": FunctionFragment;
     "getMatchIdsOfPool(uint256)": FunctionFragment;
     "getResultsOfPool(uint256)": FunctionFragment;
@@ -99,7 +99,7 @@ interface PredictionInterface extends ethers.utils.Interface {
       }
     ]
   ): string;
-  encodeFunctionData(functionFragment: "bund", values?: undefined): string;
+  encodeFunctionData(functionFragment: "betsz", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "getChoicesOfPrediction",
     values: [BigNumberish]
@@ -223,7 +223,7 @@ interface PredictionInterface extends ethers.utils.Interface {
     functionFragment: "addPoolPrediction",
     data: BytesLike
   ): Result;
-  decodeFunctionResult(functionFragment: "bund", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "betsz", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "getChoicesOfPrediction",
     data: BytesLike
@@ -506,7 +506,7 @@ export class Prediction extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<ContractTransaction>;
 
-    bund(overrides?: CallOverrides): Promise<[string]>;
+    betsz(overrides?: CallOverrides): Promise<[string]>;
 
     getChoicesOfPrediction(
       _predictionId: BigNumberish,
@@ -708,7 +708,7 @@ export class Prediction extends BaseContract {
     overrides?: Overrides & { from?: string | Promise<string> }
   ): Promise<ContractTransaction>;
 
-  bund(overrides?: CallOverrides): Promise<string>;
+  betsz(overrides?: CallOverrides): Promise<string>;
 
   getChoicesOfPrediction(
     _predictionId: BigNumberish,
@@ -910,7 +910,7 @@ export class Prediction extends BaseContract {
       overrides?: CallOverrides
     ): Promise<void>;
 
-    bund(overrides?: CallOverrides): Promise<string>;
+    betsz(overrides?: CallOverrides): Promise<string>;
 
     getChoicesOfPrediction(
       _predictionId: BigNumberish,
@@ -1387,7 +1387,7 @@ export class Prediction extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<BigNumber>;
 
-    bund(overrides?: CallOverrides): Promise<BigNumber>;
+    betsz(overrides?: CallOverrides): Promise<BigNumber>;
 
     getChoicesOfPrediction(
       _predictionId: BigNumberish,
@@ -1572,7 +1572,7 @@ export class Prediction extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<PopulatedTransaction>;
 
-    bund(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+    betsz(overrides?: CallOverrides): Promise<PopulatedTransaction>;
 
     getChoicesOfPrediction(
       _predictionId: BigNumberish,

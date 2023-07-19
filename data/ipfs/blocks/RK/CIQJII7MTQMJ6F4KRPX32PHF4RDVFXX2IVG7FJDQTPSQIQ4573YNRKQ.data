@@ -1,5 +1,5 @@
 
-�޲[
+�޲[
   {
     "inputs": [
       {
@@ -307,7 +307,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_isBundled",
+    "name": "_isbetszled",
     "outputs": [
       {
         "internalType": "bool",
@@ -344,7 +344,7 @@
         "type": "uint256"
       }
     ],
-    "name": "_nftToBundleId",
+    "name": "_nftTobetszleId",
     "outputs": [
       {
         "internalType": "uint256",
@@ -567,7 +567,7 @@
         "type": "uint256"
       }
     ],
-    "name": "getBundledNFTs",
+    "name": "getbetszledNFTs",
     "outputs": [
       {
         "internalType": "address[]",

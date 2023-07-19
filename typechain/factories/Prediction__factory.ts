@@ -11,7 +11,7 @@ const _abi = [
     inputs: [
       {
         internalType: "contract IERC20",
-        name: "_bund",
+        name: "_betsz",
         type: "address",
       },
     ],
@@ -556,7 +556,7 @@ const _abi = [
   },
   {
     inputs: [],
-    name: "bund",
+    name: "betsz",
     outputs: [
       {
         internalType: "contract IERC20",
@@ -1155,16 +1155,16 @@ export class Prediction__factory extends ContractFactory {
   }
 
   deploy(
-    _bund: string,
+    _betsz: string,
     overrides?: Overrides & { from?: string | Promise<string> }
   ): Promise<Prediction> {
-    return super.deploy(_bund, overrides || {}) as Promise<Prediction>;
+    return super.deploy(_betsz, overrides || {}) as Promise<Prediction>;
   }
   getDeployTransaction(
-    _bund: string,
+    _betsz: string,
     overrides?: Overrides & { from?: string | Promise<string> }
   ): TransactionRequest {
-    return super.getDeployTransaction(_bund, overrides || {});
+    return super.getDeployTransaction(_betsz, overrides || {});
   }
   attach(address: string): Prediction {
     return super.attach(address) as Prediction;

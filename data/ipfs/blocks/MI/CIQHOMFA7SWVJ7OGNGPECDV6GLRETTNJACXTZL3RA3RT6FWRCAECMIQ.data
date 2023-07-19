@@ -1,10 +1,10 @@
 
-ØUÐU[
+ï¿½Uï¿½U[
   {
     "inputs": [
       {
         "internalType": "contract IERC20",
-        "name": "_bund",
+        "name": "_betsz",
         "type": "address"
       }
     ],
@@ -350,7 +350,7 @@
   },
   {
     "inputs": [],
-    "name": "bund",
+    "name": "betsz",
     "outputs": [
       {
         "internalType": "contract IERC20",
@@ -547,4 +547,4 @@
     "stateMutability": "nonpayable",
     "type": "function"
   }
-]ÐU
+]ï¿½U

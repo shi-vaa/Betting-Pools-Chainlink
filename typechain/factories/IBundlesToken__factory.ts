@@ -4,7 +4,7 @@
 
 import { Contract, Signer, utils } from "ethers";
 import { Provider } from "@ethersproject/providers";
-import type { IBundlesToken, IBundlesTokenInterface } from "../IBundlesToken";
+import type { IBetszToken, IBetszTokenInterface } from "../IBetszToken";
 
 const _abi = [
   {
@@ -27,15 +27,15 @@ const _abi = [
   },
 ];
 
-export class IBundlesToken__factory {
+export class IBetszToken__factory {
   static readonly abi = _abi;
-  static createInterface(): IBundlesTokenInterface {
-    return new utils.Interface(_abi) as IBundlesTokenInterface;
+  static createInterface(): IBetszTokenInterface {
+    return new utils.Interface(_abi) as IBetszTokenInterface;
   }
   static connect(
     address: string,
     signerOrProvider: Signer | Provider
-  ): IBundlesToken {
-    return new Contract(address, _abi, signerOrProvider) as IBundlesToken;
+  ): IBetszToken {
+    return new Contract(address, _abi, signerOrProvider) as IBetszToken;
   }
 }

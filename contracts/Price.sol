@@ -6,11 +6,11 @@ import "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 contract Price {
     IUniswapV2Router02 public uniswapRouter;
 
-    address internal bundToken;
+    address internal betszToken;
 
     address internal usdcToken;
 
-    function getEstimatedBUNDforETH(uint256 _eth)
+    function getEstimatedbetszforETH(uint256 _eth)
         public
         view
         returns (uint256[] memory)
@@ -26,14 +26,14 @@ contract Price {
         return uniswapRouter.getAmountsIn(usdcAmount, getPathForETHtoUSDC());
     }
 
-    function getEstimatedBUND(uint256 _usdcAmount) public view returns (uint256) {
+    function getEstimatedbetsz(uint256 _usdcAmount) public view returns (uint256) {
         uint256 usdcAmount = getEstimatedETHforUSDC(_usdcAmount)[0];
-        return getEstimatedBUNDforETH(usdcAmount)[0];
+        return getEstimatedbetszforETH(usdcAmount)[0];
     }
 
     function getPathForETHtoDAI() private view returns (address[] memory) {
         address[] memory path = new address[](2);
-        path[0] = bundToken;
+        path[0] = betszToken;
         path[1] = uniswapRouter.WETH();
 
         return path;
