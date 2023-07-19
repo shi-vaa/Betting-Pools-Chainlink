@@ -1,8 +1,0 @@
-
-wqtype ExampleEntity @entity {
-  id: ID!
-  count: BigInt!
-  _admin: Bytes! # address
-  _enabled: Boolean! # bool
-}
-q
